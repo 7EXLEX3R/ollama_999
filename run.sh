@@ -1,0 +1,1 @@
+docker run -p 11434:11434 7EXLEX3R/ollama_999:latest
