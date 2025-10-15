@@ -12,11 +12,11 @@ plug-and-play LLM runtime
 
 #### RUN
 ```sh
-sh run.sh
+sh bin/run.sh
 # or
-docker run -p 11434:11434 7EXLEX3R/ollama_999:latest
+docker run -p 11434:11434 7exlex3r/ollama_999:latest
 # or with specified custom model
-docker run -p 11434:11434 -e OLLAMA_MODEL=llama2:latest 7EXLEX3R/ollama_999:latest
+docker run -p 11434:11434 -e OLLAMA_MODEL=llama2:latest 7exlex3r/ollama_999:latest
 ```
 
 #### TEST
