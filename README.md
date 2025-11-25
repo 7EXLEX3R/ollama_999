@@ -12,8 +12,6 @@ plug-and-play LLM runtime
 
 #### RUN
 ```sh
-sh bin/run.sh
-# or
 docker run -p 11434:11434 7exlex3r/ollama_999:latest
 # or with specified custom model
 docker run -p 11434:11434 -e OLLAMA_MODEL=llama2:latest 7exlex3r/ollama_999:latest
@@ -30,10 +28,10 @@ curl -N -X POST "http://194.26.196.139:30448/api/chat" -H "Content-Type: applica
 #### USAGE EXAMPLE
 - go to https://www.runpod.io
 - create a **NVIDIA GPU** pod template
-    - use **docker.io/7exlex3r/ollama_999** as the Docker image
+    - use the **docker.io/7exlex3r/ollama_999** Docker image
     - expose **TCP** port **11434**
-    - set **container disk** size to **10GB**
-    - *(optional, for GPU access issues)* add `CUDA_VISIBLE_DEVICES=0` env
+    - set the **container disk** size to **10GB**
+    - *(optional, in case of GPU access issues)* add `CUDA_VISIBLE_DEVICES=0` env
 - run a pod using the created template (works well with the cheapest instances from **GPU** / **Community Cloud** page - e.g. RTX A4000)
 - open the container logs to check the status
 
