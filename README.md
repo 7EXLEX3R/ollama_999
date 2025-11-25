@@ -1,6 +1,6 @@
 ### ollama_999
 
-plug-and-play LLM runtime 
+plug-and-play LLM runtime container
 
 - minimal Ollama Docker container with auto model pull & TCP streaming
 - when up, exposes **$HOST/api/chat** endpoint, ready to chat with
